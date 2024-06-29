@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Share File</title>
+</head>
+<body>
+<h1>Share File</h1>
+<form th:action="@{/shares/share}" method="post">
+  <input type="text" name="fileId" placeholder="File ID" required/>
+  <input type="text" name="sharedWith" placeholder="Share With" required/>
+  <button type="submit">Share</button>
+</form>
+</body>
+</html>
